@@ -3,15 +3,15 @@ package model.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Departement implements Serializable {
+public class Department implements Serializable {
 
     private Integer id;
     private String name;
 
-    public Departement() {
+    public Department() {
     }
 
-    public Departement(Integer id, String name) {
+    public Department(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -36,7 +36,7 @@ public class Departement implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Departement that = (Departement) o;
+        Department that = (Department) o;
         return Objects.equals(id, that.id);
     }
 
@@ -47,6 +47,6 @@ public class Departement implements Serializable {
 
     @Override
     public String toString() {
-        return "Departement {id= " + id + ", name= " + name + "}";
+        return "Department {id= " + id + ", name= " + name + "}";
     }
 }
