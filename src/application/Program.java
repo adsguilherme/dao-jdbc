@@ -62,7 +62,7 @@ public class Program {
 
         System.out.println();
         System.out.println("### Teste6: seller deleteById ###");
-        System.out.println("Enter id for delete test");
+        System.out.print("Enter id for delete test: ");
         int id = sc.nextInt();
         sellerDao.deleteById(id);
         System.out.println("Delete completed!");
