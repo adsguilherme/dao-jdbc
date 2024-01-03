@@ -16,6 +16,8 @@ public class Program {
 
         SellerDao sellerDao = DaoFactory.createSellerDao(); // Aqui foi instanciado o DAO sem a necessidade do new, devido ser uma interface.
 
+        System.out.println("### Teste1: seller findById ###");
+
         Seller seller1 = sellerDao.findById(3);
 
         // System.out.println(seller);
